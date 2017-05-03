@@ -1,37 +1,131 @@
-/*
- * Ingresa el CSS del proyecto en este archivo
- */
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  /* Establece la fuente de Google aquí */
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.71429;
-  background-color: #fff;
+    /* Establece la fuente de Google aquí */
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.71429;
+    background-color: #fff;
+}
+/*Hacemos que nuestro menú sea fijo respecto a la página*/
+header{
+    position: fixed;
+    background: white;
+    top: 0;
+}
+.menu{
+    padding: 14px 70px;
+    overflow: auto;
 }
 
 img {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
+/*Damos tamaño y posición derecha a el logo */
+.logo{
+    width: 70px;
+    float: right;
+}
 a {
-  color: #373B47;
-  text-decoration: none;
+    color: #373B47;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #E95853;
+    color: #E95853;
+}
+
+.link{
+    font-weight: 700;
+    padding: 21px;
+}
+
+/*Segunda sección*/
+
+#home{
+  background-image: url(../assets/images/bg-home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 588px;
+  text-align: center;
+}
+
+/*Checar uno por uno*/
+#home .container{
+  color: white;
+  padding: 70px;
+
+}
+
+.text-home{
+  font-size: 53px;
+}
+
+.btn-home{
+  background: #2ECC71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.comodin{
+    height: 80px;
+}
+
+#services{
+  background-color: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px;
+    width: 100%;
+    margin: 0px;
+    
+}
+
+.box-services{
+  width: 30%;
+}
+
+.text-services{
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+#lapiz{
+    border-radius: 50%;
+}
+#work{
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.box-work{
+  text-align: center;
+  padding: 70px 7px;
+  width: 30%;
+}
+
+#copyright{
+  text-align: center;
+  color: white;
+  background: black;
+  letter-spacing: 2px;
 }

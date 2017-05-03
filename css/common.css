@@ -1,16 +1,86 @@
-/*
- * Clases reutilizables para el proyecto
- * (Aquí pueden ir las clases de tu grid)
- */
-
 .mb-0 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .mt-0 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .text-uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+/*MIS CLASES*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+/**/
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+/*Creando Grid Style*/
+/*Estandarizando Filas Grid*/
+[class*="col-"] {
+    min-height: 6px;
+    padding: 12px;
+    float: left;
+}
+
+/*Distintos tamaños de columnas para grid*/
+.col-1 {
+    /*(1/12)x100*/
+    width: 8.333%;
+}
+.col-2 {
+    /*(2/12)x100*/
+    width: 16.667%;
+}
+.col-3 {
+    /*(3/12)x100*/
+    width: 25%;
+}
+.col-4 {
+    /*(4/12)x100*/
+    width: 33.333%;
+}
+.col-5 {
+    /*(5/12)x100*/
+    width: 41.667%;
+}
+.col-6 {
+    /*(6/12)x100*/
+    width: 50%;
+}
+.col-7 {
+    /*(7/12)x100*/
+    width: 58.333%;
+}
+.col-8 {
+    /*(8/12)x100*/
+    width: 66.667%;
+}
+.col-9 {
+    /*(9/12)x100*/
+    width: 75%;
+}
+.col-10 {
+    /*(10/12)x100*/
+    width: 83.333%;
+}
+.col-11 {
+    /*(11/12)x100*/
+    width: 91.667%;
+}
+.col-12 {
+    /*(12/12)x100*/
+    width: 100%;
 }
